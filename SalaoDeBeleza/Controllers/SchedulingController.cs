@@ -1,39 +1,37 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using SalaoDeBeleza.Classes;
 using SalaoDeBeleza.DataBase;
-using SalaoDeBeleza.Services;
+using SalaoDeBeleza.Components;
+using SalaoDeBeleza.Components.DTOs;
 
 [Route("api/[controller]")]
 [ApiController]
-public class AgendamentoController : ControllerBase
+public class SchedulingController : ControllerBase
 {
-    private readonly AgendamentoComponent service;
-    public AgendamentoController(AgendamentoComponent _service)
+    private SchedulingComponent schedulingComponent;
+    public SchedulingController(SchedulingComponent component)
     {
-        service = _service;
+        schedulingComponent = component;
     }
 
 
     [HttpGet]
-    public List<Agendamento> GetAgendamentos()
+    public List<Scheduling> getAgendamentos()
     {
-       return new List<Agendamento>();
+       return schedulingComponent.getAgendamentos();
     }
 
     [HttpPost]
-    public IActionResult AgendarServico([FromBody] Agendamento agendamentoVO)
+    public void AgendarServico([FromBody] SchedulingDTO dto)
     {
         // Antes de agendar o horário, verifica se o profissional está disponível
-        Profissional profissional = agendamentoVO.Profissional;
-        if (!profissional.Disponivel)
+        //Professional profissional = dto.Professional;
+        /*if (!profissional.Disponivel)
         {
             return BadRequest("O profissional não está disponível para esta data e horário.");
-        }
+        }*/
 
-        Agendamento agendamento = new Agendamento(agendamentoVO.Cliente, agendamentoVO.Servico, profissional, agendamentoVO.Horario);
-        agendamento.Profissional.Disponivel = false;
-        service.Insert(agendamento);
-        return Ok(agendamento);
+        schedulingComponent.Insert(dto);
     }
 
     /*[HttpPut("{id}")]

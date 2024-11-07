@@ -1,15 +1,78 @@
 [
   {
-    "ContainingType": "AgendamentoController",
-    "Method": "GetAgendamentos",
-    "RelativePath": "api/Agendamento",
+    "ContainingType": "CostumerController",
+    "Method": "GetClientes",
+    "RelativePath": "api/Costumer",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CostumerController",
+    "Method": "AdicionarCliente",
+    "RelativePath": "api/Costumer",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "cliente",
+        "Type": "SalaoDeBeleza.Classes.Customer",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CostumerController",
+    "Method": "AtualizarCliente",
+    "RelativePath": "api/Costumer/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "cliente",
+        "Type": "SalaoDeBeleza.Classes.Customer",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CostumerController",
+    "Method": "DeletarCliente",
+    "RelativePath": "api/Costumer/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProfessionalController",
+    "Method": "getProfessionals",
+    "RelativePath": "api/Professional",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.List\u00601[[SalaoDeBeleza.Classes.Agendamento, SalaoDeBeleza, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "System.Collections.Generic.List\u00601[[SalaoDeBeleza.Classes.Professional, SalaoDeBeleza, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -20,145 +83,67 @@
     ]
   },
   {
-    "ContainingType": "AgendamentoController",
+    "ContainingType": "ProfessionalController",
+    "Method": "InsertProfessional",
+    "RelativePath": "api/Professional",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "SalaoDeBeleza.Components.DTOs.ProfessionalDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "SchedulingController",
+    "Method": "getAgendamentos",
+    "RelativePath": "api/Scheduling",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[SalaoDeBeleza.Classes.Scheduling, SalaoDeBeleza, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "SchedulingController",
     "Method": "AgendarServico",
-    "RelativePath": "api/Agendamento",
+    "RelativePath": "api/Scheduling",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "agendamentoVO",
-        "Type": "SalaoDeBeleza.Classes.Agendamento",
+        "Name": "dto",
+        "Type": "SalaoDeBeleza.Components.DTOs.SchedulingDTO",
         "IsRequired": true
       }
     ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "ClienteController",
-    "Method": "GetClientes",
-    "RelativePath": "api/Cliente",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "ClienteController",
-    "Method": "AdicionarCliente",
-    "RelativePath": "api/Cliente",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
+    "ReturnTypes": [
       {
-        "Name": "cliente",
-        "Type": "SalaoDeBeleza.Classes.Cliente",
-        "IsRequired": true
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
       }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "ClienteController",
-    "Method": "AtualizarCliente",
-    "RelativePath": "api/Cliente/{id}",
-    "HttpMethod": "PUT",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      },
-      {
-        "Name": "cliente",
-        "Type": "SalaoDeBeleza.Classes.Cliente",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "ClienteController",
-    "Method": "DeletarCliente",
-    "RelativePath": "api/Cliente/{id}",
-    "HttpMethod": "DELETE",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "ServicoController",
-    "Method": "GetServicos",
-    "RelativePath": "api/Servico",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "ServicoController",
-    "Method": "AdicionarServico",
-    "RelativePath": "api/Servico",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "servico",
-        "Type": "SalaoDeBeleza.Classes.Servico",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "ServicoController",
-    "Method": "AtualizarServico",
-    "RelativePath": "api/Servico/{id}",
-    "HttpMethod": "PUT",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      },
-      {
-        "Name": "servico",
-        "Type": "SalaoDeBeleza.Classes.Servico",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "ServicoController",
-    "Method": "DeletarServico",
-    "RelativePath": "api/Servico/{id}",
-    "HttpMethod": "DELETE",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
+    ]
   }
 ]

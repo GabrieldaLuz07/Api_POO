@@ -1,27 +1,33 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using SalaoDeBeleza.Classes;
+using SalaoDeBeleza.Components;
+using SalaoDeBeleza.Components.DTOs;
 
 [Route("api/[controller]")]
 [ApiController]
-public class ClienteController : ControllerBase
+public class CostumerController : ControllerBase
 {
-    private static List<Cliente> Clientes = new List<Cliente>();
+    private CustomerComponent customerComponent;
+    public CostumerController(CustomerComponent component)
+    {
+        customerComponent = component;
+    }
 
     [HttpGet]
-    public IActionResult GetClientes()
+    public List<Customer> getCustomers()
     {
-        return Ok(Clientes);
+        return customerComponent.getCustomers();
     }
 
     [HttpPost]
-    public IActionResult AdicionarCliente([FromBody] Cliente cliente)
+    public void InsertCustomers([FromBody] CustomerDTO dto)
     {
-        Clientes.Add(cliente);
-        return Ok(cliente);
+        customerComponent.Insert(dto);
     }
 
+    /*
     [HttpPut("{id}")]
-    public IActionResult AtualizarCliente(int id, [FromBody] Cliente cliente)
+    public IActionResult AtualizarCliente(int id, [FromBody] Customer cliente)
     {
         var clienteExistente = Clientes.FirstOrDefault(c => c.Id == id);
         if (clienteExistente == null)
@@ -43,5 +49,5 @@ public class ClienteController : ControllerBase
 
         Clientes.Remove(cliente);
         return Ok();
-    }
+    }*/
 }

@@ -1,27 +1,33 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using SalaoDeBeleza.Classes;
+using SalaoDeBeleza.Components.DTOs;
+using SalaoDeBeleza.Components;
 
 [Route("api/[controller]")]
 [ApiController]
-public class ServicoController : ControllerBase
+public class ServiceController : ControllerBase
 {
-    private static List<Servico> Servicos = new List<Servico>();
+    private ServiceComponent serviceComponent;
+    public ServiceController(ServiceComponent component)
+    {
+        serviceComponent = component;
+    }
+
 
     [HttpGet]
-    public IActionResult GetServicos()
+    public List<Service> getServices()
     {
-        return Ok(Servicos);
+        return serviceComponent.getServices();
     }
 
     [HttpPost]
-    public IActionResult AdicionarServico([FromBody] Servico servico)
+    public void InsertServices([FromBody] ServiceDTO dto)
     {
-        Servicos.Add(servico);
-        return Ok(servico);
+        serviceComponent.Insert(dto);
     }
 
-    [HttpPut("{id}")]
-    public IActionResult AtualizarServico(int id, [FromBody] Servico servico)
+    /*[HttpPut("{id}")]
+    public IActionResult AtualizarServico(int id, [FromBody] Service servico)
     {
         var servicoExistente = Servicos.FirstOrDefault(s => s.Id == id);
         if (servicoExistente == null)
@@ -42,5 +48,5 @@ public class ServicoController : ControllerBase
 
         Servicos.Remove(servico);
         return Ok();
-    }
+    }*/
 }

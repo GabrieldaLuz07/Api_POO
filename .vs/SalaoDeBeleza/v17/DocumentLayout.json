@@ -3,32 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\daluz\\source\\repos\\SalaoDeBeleza\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8FF5175C-884B-4F8C-81DC-49151A4146AF}|SalaoDeBeleza\\SalaoDeBeleza.csproj|c:\\users\\daluz\\source\\repos\\salaodebeleza\\salaodebeleza\\components\\agendamentocomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8FF5175C-884B-4F8C-81DC-49151A4146AF}|SalaoDeBeleza\\SalaoDeBeleza.csproj|solutionrelative:salaodebeleza\\components\\agendamentocomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8FF5175C-884B-4F8C-81DC-49151A4146AF}|SalaoDeBeleza\\SalaoDeBeleza.csproj|c:\\users\\daluz\\source\\repos\\salaodebeleza\\salaodebeleza\\controllers\\servicecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8FF5175C-884B-4F8C-81DC-49151A4146AF}|SalaoDeBeleza\\SalaoDeBeleza.csproj|solutionrelative:salaodebeleza\\controllers\\servicecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8FF5175C-884B-4F8C-81DC-49151A4146AF}|SalaoDeBeleza\\SalaoDeBeleza.csproj|c:\\users\\daluz\\source\\repos\\salaodebeleza\\salaodebeleza\\controllers\\profissionalcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8FF5175C-884B-4F8C-81DC-49151A4146AF}|SalaoDeBeleza\\SalaoDeBeleza.csproj|solutionrelative:salaodebeleza\\controllers\\profissionalcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8FF5175C-884B-4F8C-81DC-49151A4146AF}|SalaoDeBeleza\\SalaoDeBeleza.csproj|c:\\users\\daluz\\source\\repos\\salaodebeleza\\salaodebeleza\\controllers\\professionalcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8FF5175C-884B-4F8C-81DC-49151A4146AF}|SalaoDeBeleza\\SalaoDeBeleza.csproj|solutionrelative:salaodebeleza\\controllers\\professionalcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8FF5175C-884B-4F8C-81DC-49151A4146AF}|SalaoDeBeleza\\SalaoDeBeleza.csproj|c:\\users\\daluz\\source\\repos\\salaodebeleza\\salaodebeleza\\database\\dbcontextinmemory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8FF5175C-884B-4F8C-81DC-49151A4146AF}|SalaoDeBeleza\\SalaoDeBeleza.csproj|solutionrelative:salaodebeleza\\database\\dbcontextinmemory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8FF5175C-884B-4F8C-81DC-49151A4146AF}|SalaoDeBeleza\\SalaoDeBeleza.csproj|c:\\users\\daluz\\source\\repos\\salaodebeleza\\salaodebeleza\\controllers\\agendamentocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8FF5175C-884B-4F8C-81DC-49151A4146AF}|SalaoDeBeleza\\SalaoDeBeleza.csproj|solutionrelative:salaodebeleza\\controllers\\agendamentocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8FF5175C-884B-4F8C-81DC-49151A4146AF}|SalaoDeBeleza\\SalaoDeBeleza.csproj|c:\\users\\daluz\\source\\repos\\salaodebeleza\\salaodebeleza\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8FF5175C-884B-4F8C-81DC-49151A4146AF}|SalaoDeBeleza\\SalaoDeBeleza.csproj|solutionrelative:salaodebeleza\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8FF5175C-884B-4F8C-81DC-49151A4146AF}|SalaoDeBeleza\\SalaoDeBeleza.csproj|c:\\users\\daluz\\source\\repos\\salaodebeleza\\salaodebeleza\\controllers\\servicocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8FF5175C-884B-4F8C-81DC-49151A4146AF}|SalaoDeBeleza\\SalaoDeBeleza.csproj|solutionrelative:salaodebeleza\\controllers\\servicocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8FF5175C-884B-4F8C-81DC-49151A4146AF}|SalaoDeBeleza\\SalaoDeBeleza.csproj|c:\\users\\daluz\\source\\repos\\salaodebeleza\\salaodebeleza\\controllers\\clientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8FF5175C-884B-4F8C-81DC-49151A4146AF}|SalaoDeBeleza\\SalaoDeBeleza.csproj|solutionrelative:salaodebeleza\\controllers\\clientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8FF5175C-884B-4F8C-81DC-49151A4146AF}|SalaoDeBeleza\\SalaoDeBeleza.csproj|c:\\users\\daluz\\source\\repos\\salaodebeleza\\salaodebeleza\\controllers\\costumercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8FF5175C-884B-4F8C-81DC-49151A4146AF}|SalaoDeBeleza\\SalaoDeBeleza.csproj|solutionrelative:salaodebeleza\\controllers\\costumercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 597,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -46,93 +30,47 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\daluz\\source\\repos\\SalaoDeBeleza\\SalaoDeBeleza\\Program.cs",
-              "RelativeDocumentMoniker": "SalaoDeBeleza\\Program.cs",
-              "ToolTip": "C:\\Users\\daluz\\source\\repos\\SalaoDeBeleza\\SalaoDeBeleza\\Program.cs",
-              "RelativeToolTip": "SalaoDeBeleza\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAhAAAA",
+              "DocumentIndex": 1,
+              "Title": "ProfessionalController.cs",
+              "DocumentMoniker": "C:\\Users\\daluz\\source\\repos\\SalaoDeBeleza\\SalaoDeBeleza\\Controllers\\ProfessionalController.cs",
+              "RelativeDocumentMoniker": "SalaoDeBeleza\\Controllers\\ProfessionalController.cs",
+              "ToolTip": "C:\\Users\\daluz\\source\\repos\\SalaoDeBeleza\\SalaoDeBeleza\\Controllers\\ProfessionalController.cs",
+              "RelativeToolTip": "SalaoDeBeleza\\Controllers\\ProfessionalController.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAlwBwAAAAGAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-25T22:55:35.103Z",
+              "WhenOpened": "2024-11-02T00:16:18.765Z",
               "EditorCaption": ""
-            },
+            }
+          ]
+        },
+        {
+          "DockedWidth": 597,
+          "SelectedChildIndex": 0,
+          "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "AgendamentoComponent.cs",
-              "DocumentMoniker": "C:\\Users\\daluz\\source\\repos\\SalaoDeBeleza\\SalaoDeBeleza\\Components\\AgendamentoComponent.cs",
-              "RelativeDocumentMoniker": "SalaoDeBeleza\\Components\\AgendamentoComponent.cs",
-              "ToolTip": "C:\\Users\\daluz\\source\\repos\\SalaoDeBeleza\\SalaoDeBeleza\\Components\\AgendamentoComponent.cs",
-              "RelativeToolTip": "SalaoDeBeleza\\Components\\AgendamentoComponent.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAA5AAAA",
+              "Title": "ServiceController.cs",
+              "DocumentMoniker": "C:\\Users\\daluz\\source\\repos\\SalaoDeBeleza\\SalaoDeBeleza\\Controllers\\ServiceController.cs",
+              "RelativeDocumentMoniker": "SalaoDeBeleza\\Controllers\\ServiceController.cs",
+              "ToolTip": "C:\\Users\\daluz\\source\\repos\\SalaoDeBeleza\\SalaoDeBeleza\\Controllers\\ServiceController.cs",
+              "RelativeToolTip": "SalaoDeBeleza\\Controllers\\ServiceController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAPAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-25T22:35:15.588Z",
+              "WhenOpened": "2024-11-07T02:49:46.033Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "DBContextInMemory.cs",
-              "DocumentMoniker": "C:\\Users\\daluz\\source\\repos\\SalaoDeBeleza\\SalaoDeBeleza\\DataBase\\DBContextInMemory.cs",
-              "RelativeDocumentMoniker": "SalaoDeBeleza\\DataBase\\DBContextInMemory.cs",
-              "ToolTip": "C:\\Users\\daluz\\source\\repos\\SalaoDeBeleza\\SalaoDeBeleza\\DataBase\\DBContextInMemory.cs",
-              "RelativeToolTip": "SalaoDeBeleza\\DataBase\\DBContextInMemory.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAkAAAAJAAAA",
+              "Title": "CostumerController.cs",
+              "DocumentMoniker": "C:\\Users\\daluz\\source\\repos\\SalaoDeBeleza\\SalaoDeBeleza\\Controllers\\CostumerController.cs",
+              "RelativeDocumentMoniker": "SalaoDeBeleza\\Controllers\\CostumerController.cs",
+              "ToolTip": "C:\\Users\\daluz\\source\\repos\\SalaoDeBeleza\\SalaoDeBeleza\\Controllers\\CostumerController.cs",
+              "RelativeToolTip": "SalaoDeBeleza\\Controllers\\CostumerController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-25T22:13:58.291Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "AgendamentoController.cs",
-              "DocumentMoniker": "C:\\Users\\daluz\\source\\repos\\SalaoDeBeleza\\SalaoDeBeleza\\Controllers\\AgendamentoController.cs",
-              "RelativeDocumentMoniker": "SalaoDeBeleza\\Controllers\\AgendamentoController.cs",
-              "ToolTip": "C:\\Users\\daluz\\source\\repos\\SalaoDeBeleza\\SalaoDeBeleza\\Controllers\\AgendamentoController.cs",
-              "RelativeToolTip": "SalaoDeBeleza\\Controllers\\AgendamentoController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-23T23:47:04.024Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ProfissionalController.cs",
-              "DocumentMoniker": "C:\\Users\\daluz\\source\\repos\\SalaoDeBeleza\\SalaoDeBeleza\\Controllers\\ProfissionalController.cs",
-              "RelativeDocumentMoniker": "SalaoDeBeleza\\Controllers\\ProfissionalController.cs",
-              "ToolTip": "C:\\Users\\daluz\\source\\repos\\SalaoDeBeleza\\SalaoDeBeleza\\Controllers\\ProfissionalController.cs",
-              "RelativeToolTip": "SalaoDeBeleza\\Controllers\\ProfissionalController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAC0AAAAHAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-23T23:46:43.093Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ServicoController.cs",
-              "DocumentMoniker": "C:\\Users\\daluz\\source\\repos\\SalaoDeBeleza\\SalaoDeBeleza\\Controllers\\ServicoController.cs",
-              "RelativeDocumentMoniker": "SalaoDeBeleza\\Controllers\\ServicoController.cs",
-              "ToolTip": "C:\\Users\\daluz\\source\\repos\\SalaoDeBeleza\\SalaoDeBeleza\\Controllers\\ServicoController.cs",
-              "RelativeToolTip": "SalaoDeBeleza\\Controllers\\ServicoController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAC4AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-23T23:46:14.48Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ClienteController.cs",
-              "DocumentMoniker": "C:\\Users\\daluz\\source\\repos\\SalaoDeBeleza\\SalaoDeBeleza\\Controllers\\ClienteController.cs",
-              "RelativeDocumentMoniker": "SalaoDeBeleza\\Controllers\\ClienteController.cs",
-              "ToolTip": "C:\\Users\\daluz\\source\\repos\\SalaoDeBeleza\\SalaoDeBeleza\\Controllers\\ClienteController.cs",
-              "RelativeToolTip": "SalaoDeBeleza\\Controllers\\ClienteController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAcAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-23T23:45:23.011Z",
+              "WhenOpened": "2024-11-07T02:47:29.988Z",
               "EditorCaption": ""
             }
           ]

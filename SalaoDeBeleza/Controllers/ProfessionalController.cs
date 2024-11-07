@@ -1,25 +1,32 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using SalaoDeBeleza.Classes;
+using SalaoDeBeleza.Components.DTOs;
+using SalaoDeBeleza.Components;
 
 [Route("api/[controller]")]
 [ApiController]
-public class ProfissionalController : ControllerBase
+public class ProfessionalController : ControllerBase
 {
-    /*private static List<Profissional> Profissionais = new List<Profissional>();
+    private ProfessionalComponent professionalComponent;
+    public ProfessionalController(ProfessionalComponent component)
+    {
+        professionalComponent = component;
+    }
+
 
     [HttpGet]
-    public IActionResult GetProfissionais()
+    public List<Professional> getProfessionals()
     {
-        return Ok(Profissionais);
+        return professionalComponent.getProfessionals();
     }
 
     [HttpPost]
-    public IActionResult AdicionarProfissional([FromBody] Profissional profissional)
+    public void InsertProfessionals([FromBody] ProfessionalDTO dto)
     {
-        Profissionais.Add(profissional);
-        return Ok(profissional);
+        professionalComponent.Insert(dto);
     }
 
+    /*
     [HttpPut("{id}")]
     public IActionResult AtualizarProfissional(int id, [FromBody] Profissional profissional)
     {

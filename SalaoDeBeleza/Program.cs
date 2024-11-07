@@ -1,12 +1,14 @@
 using Microsoft.EntityFrameworkCore;
+using SalaoDeBeleza.Classes;
+using SalaoDeBeleza.Components;
 using SalaoDeBeleza.DataBase;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
-
 builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
+builder.Services.AddScoped<SchedulingComponent>();
+builder.Services.AddScoped<ProfessionalComponent>();
+builder.Services.AddScoped<CustomerComponent>();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<DBContextInMemory>(options => options.UseInMemoryDatabase("salaodebeleza"));
