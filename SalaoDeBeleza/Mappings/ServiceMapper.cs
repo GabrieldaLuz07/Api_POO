@@ -1,14 +1,14 @@
 ﻿using AutoMapper;
 using SalaoDeBeleza.Classes;
-using SalaoDeBeleza.Components.DTOs;
+using SalaoDeBeleza.DTOs;
 
-namespace SalaoDeBeleza.Components.Mappings
+namespace SalaoDeBeleza.Mappings
 {
     public class ServiceMapper : Profile
     {
         public ServiceMapper()
         {
-            CreateMap<Service, ServiceDTO>().ReverseMap();
+            CreateMap<Service, ServiceFinishDTO>().ReverseMap();
         }
     }
 }

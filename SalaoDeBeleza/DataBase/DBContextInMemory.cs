@@ -10,8 +10,6 @@ namespace SalaoDeBeleza.DataBase
         {
         }
 
-        public virtual DbSet<Scheduling> Scheduling { get; set; }
-
         public virtual DbSet<Customer> Customer { get; set; }
 
         public virtual DbSet<Professional> Professional { get; set; }

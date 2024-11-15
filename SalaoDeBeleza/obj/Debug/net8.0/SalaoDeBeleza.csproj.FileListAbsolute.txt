@@ -41,3 +41,4 @@ C:\Users\daluz\source\repos\SalaoDeBeleza\SalaoDeBeleza\bin\Debug\net8.0\Microso
 C:\Users\daluz\source\repos\SalaoDeBeleza\SalaoDeBeleza\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
 C:\Users\daluz\source\repos\SalaoDeBeleza\SalaoDeBeleza\obj\Debug\net8.0\SalaoDeBeleza.sourcelink.json
 C:\Users\daluz\source\repos\SalaoDeBeleza\SalaoDeBeleza\bin\Debug\net8.0\AutoMapper.dll
+C:\Users\daluz\source\repos\SalaoDeBeleza\SalaoDeBeleza\bin\Debug\net8.0\FluentValidation.dll

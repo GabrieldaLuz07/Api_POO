@@ -1,53 +1,82 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using SalaoDeBeleza.Classes;
 using SalaoDeBeleza.Components;
-using SalaoDeBeleza.Components.DTOs;
+using SalaoDeBeleza.DataBase;
+using SalaoDeBeleza.DTOs;
 
 [Route("api/[controller]")]
 [ApiController]
 public class CostumerController : ControllerBase
 {
     private CustomerComponent customerComponent;
-    public CostumerController(CustomerComponent component)
+    public CostumerController(DBContextInMemory db)
     {
-        customerComponent = component;
+        customerComponent = new CustomerComponent(db);
     }
 
+    // Buscar todos os clientes
     [HttpGet]
     public List<Customer> getCustomers()
     {
-        return customerComponent.getCustomers();
+        return customerComponent.GetAll();
     }
 
+    // Buscar um cliente específico pelo id
+    [HttpGet("{id}")]
+    public IActionResult getCustomerById(int id)
+    {
+        try
+        {
+            return Ok(customerComponent.GetById(id));
+        }
+        catch (Exception ex)
+        {
+            return BadRequest(ex.Message);
+        }
+    }
+
+    // Cadastrar um cliente
     [HttpPost]
-    public void InsertCustomers([FromBody] CustomerDTO dto)
+    public IActionResult InsertCustomers([FromBody] CustomerDTO dto)
     {
-        customerComponent.Insert(dto);
+        try
+        {
+            customerComponent.Insert(dto);
+            return Ok("Cliente cadastrado com sucesso!");
+        } 
+        catch (Exception ex)
+        {
+            return BadRequest(ex.Message);
+        }
     }
 
-    /*
+    // Atualizar um cliente existente
     [HttpPut("{id}")]
-    public IActionResult AtualizarCliente(int id, [FromBody] Customer cliente)
+    public IActionResult UpdateCustomers(int id, [FromBody] CustomerDTO dto)
     {
-        var clienteExistente = Clientes.FirstOrDefault(c => c.Id == id);
-        if (clienteExistente == null)
-            return NotFound();
-
-        clienteExistente.Nome = cliente.Nome;
-        clienteExistente.Telefone = cliente.Telefone;
-        clienteExistente.Email = cliente.Email;
-
-        return Ok(clienteExistente);
+        try
+        {
+            customerComponent.Update(id, dto);
+            return Ok("Cliente atualizado com sucesso!");
+        }
+        catch (Exception ex)
+        {
+            return BadRequest(ex.Message);
+        }
     }
 
+    // Excluir um clientes
     [HttpDelete("{id}")]
-    public IActionResult DeletarCliente(int id)
+    public IActionResult DeleteCustomers(int id)
     {
-        var cliente = Clientes.FirstOrDefault(c => c.Id == id);
-        if (cliente == null)
-            return NotFound();
-
-        Clientes.Remove(cliente);
-        return Ok();
-    }*/
+        try
+        {
+            customerComponent.Delete(id);
+            return Ok("Cliente excluído com sucesso!");
+        } 
+        catch (Exception ex)
+        {
+            return BadRequest(ex.Message);
+        }
+    }
 }

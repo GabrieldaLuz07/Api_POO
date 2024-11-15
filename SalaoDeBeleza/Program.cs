@@ -1,29 +1,35 @@
+using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Hosting;
 using SalaoDeBeleza.Classes;
-using SalaoDeBeleza.Components;
 using SalaoDeBeleza.DataBase;
 
 var builder = WebApplication.CreateBuilder(args);
 
+builder.Services.AddDbContext<DBContextInMemory>(options =>
+options.UseInMemoryDatabase("salaodebeleza"));
+builder.Services.AddSwaggerGen(c =>
+{
+    c.SwaggerDoc(
+    "v1", new Microsoft.OpenApi.Models.OpenApiInfo { Title = "Salão de Beleza", Version = "v1" });
+});
+
 builder.Services.AddControllers();
-builder.Services.AddScoped<SchedulingComponent>();
-builder.Services.AddScoped<ProfessionalComponent>();
-builder.Services.AddScoped<CustomerComponent>();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-builder.Services.AddDbContext<DBContextInMemory>(options => options.UseInMemoryDatabase("salaodebeleza"));
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
-    app.UseSwaggerUI();
+    app.UseSwaggerUI(c =>
+    {
+        c.SwaggerEndpoint("/swagger/v1/swagger.json", "API Salão de Beleza");
+        c.RoutePrefix = string.Empty;
+    });
 }
 
 app.UseAuthorization();
-
 app.MapControllers();
-
 app.Run();
