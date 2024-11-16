@@ -2,6 +2,7 @@
 
 namespace SalaoDeBeleza.Classes
 {
+    // Classe serviço, contendo o cliente e profissional envolvidos no serviço. 2 Enums para tipo do serviço e status do servico. Preco e duração do serviço também
     public class Service
     {
         public int Id { get; set; }

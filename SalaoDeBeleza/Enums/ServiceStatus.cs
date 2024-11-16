@@ -2,6 +2,7 @@
 
 namespace SalaoDeBeleza.Enums
 {
+    // Enum criado pensando em ter um melhor controle na hora de manipular essa propriedade
     public enum ServiceStatus
     {
         [Description("Agendado")]

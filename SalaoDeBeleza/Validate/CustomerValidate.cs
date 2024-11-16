@@ -3,6 +3,7 @@ using SalaoDeBeleza.DTOs;
 
 namespace SalaoDeBeleza.Validate
 {
+    // Validar todos os campos do dto
     public class CustomerValidate
     {
         public CustomerValidate() { }

@@ -31,19 +31,20 @@ namespace SalaoDeBeleza.Components
             mapper = config.CreateMapper();
         }
 
-         // Função para verificar se existe um registro com o id informado
+         // Função para verificar se existe um registro com o id informado, para não ter que buscar toda vez e verificar se esta diferente de null
          public bool CustomerExists(int id)
          {
             return repository.VerifyCustomer(id);
          }
 
-         // Método GetAll retornando direto a lista de clientes
+         // Função retornando toda a lista de clientes
          public List<Customer> GetAll()
          {
              return repository.GetAllCustomers();
          }
 
-         // Buscando pelo id, validando caso o id seja menor ou igual a 0, e caso não encontre o cliente pelo id informado
+         // Buscando pelo id, validando caso o id seja menor ou igual a 0. Caso não encontre o cliente pelo id informado, uma exception sera disparada.
+         // Busquei fazer essa função básica e simplificada para usar nas outras funções.
          public Customer GetById(int id)
          {
              if (id <= 0)
@@ -57,16 +58,13 @@ namespace SalaoDeBeleza.Components
          {
              validator.ValidateCustomer(dto);
 
-             //if (CustomerExists(dto.Id))
-               // throw new Exception("Id já cadastrado!");
-
              Customer customer = new Customer();
              customer = mapper.Map<Customer>(dto);
              repository.AddCustomer(customer);
              return dto;
          }
 
-         // Update, validando antes de atualizar, buscando o cliente, mapeando para a classe e depois atualizando.
+         // Update, validando antes de atualizar, buscando o cliente, atribuindo os valores do DTO para a classe e depois atualizando.
          public void Update(int id, CustomerDTO dto)
          {
             validator.ValidateCustomer(dto);
@@ -79,7 +77,7 @@ namespace SalaoDeBeleza.Components
             repository.UpdateCustomer(customer);
          }
 
-         // Delete, buscando o cliente antes de excluir
+         // Delete, buscando o cliente pelo id antes de excluir
          public void Delete(int id)
          {
              Customer customer = repository.GetCustomerById(id);

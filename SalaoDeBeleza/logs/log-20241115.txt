@@ -1,0 +1,2 @@
+2024-11-15 21:26:21 [INF] Iniciando a aplicação.
+2024-11-15 21:41:08 [INF] Iniciando a aplicação.

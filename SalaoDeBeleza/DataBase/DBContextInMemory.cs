@@ -10,10 +10,13 @@ namespace SalaoDeBeleza.DataBase
         {
         }
 
+        // Tabela para armazenar os clientes
         public virtual DbSet<Customer> Customer { get; set; }
 
+        // Tabela para armazenar os profissionais
         public virtual DbSet<Professional> Professional { get; set; }
 
+        // Tabela para armazenar os serviços
         public virtual DbSet<Service> Service { get; set; }
     }
 }

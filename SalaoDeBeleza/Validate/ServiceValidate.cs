@@ -4,6 +4,7 @@ using SalaoDeBeleza.Enums;
 
 namespace SalaoDeBeleza.Validate
 {
+    // Validar todos os campos do dto
     public class ServiceValidate
     {
         public ServiceValidate() { }
@@ -51,11 +52,6 @@ namespace SalaoDeBeleza.Validate
             if (updateDTO.Price <= 0)
             {
                 throw new DataValidationException("O preço do serviço deve ser maior que zero!");
-            }
-
-            if (updateDTO.Duration <= 0)
-            {
-                throw new DataValidationException("A duração do serviço deve ser maior que zero!");
             }
         }
 

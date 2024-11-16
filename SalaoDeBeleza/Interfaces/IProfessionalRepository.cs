@@ -2,6 +2,7 @@
 
 namespace SalaoDeBeleza.Interfaces
 {
+    // Interface contendo todos os métodos padrões para manipulação das tabelas do banco
     public interface IProfessionalRepository
     {
         List<Professional> GetAllProfessionals();

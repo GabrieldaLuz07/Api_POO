@@ -1,5 +1,6 @@
 ﻿namespace SalaoDeBeleza.Classes
 {
+    // Classe cliente, contendo apenas as informações básicas e necessárias
     public class Customer
     {
         public int Id { get; set; }

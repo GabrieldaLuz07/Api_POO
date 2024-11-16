@@ -2,6 +2,8 @@
 
 namespace SalaoDeBeleza.Classes
 {
+
+    // Classe Profissional, contendo apenas as informações básicas e necessárias
     public class Professional
     {
         public int Id { get; set; }

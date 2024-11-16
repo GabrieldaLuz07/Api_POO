@@ -4,6 +4,7 @@ using SalaoDeBeleza.Enums;
 
 namespace SalaoDeBeleza.Validate
 {
+    // Validar todos os campos do dto
     public class ProfessionalValidate
     {
         public ProfessionalValidate() { }

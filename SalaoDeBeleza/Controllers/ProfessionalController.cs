@@ -9,9 +9,11 @@ using SalaoDeBeleza.DTOs;
 public class ProfessionalController : ControllerBase
 {
     private ProfessionalComponent professionalComponent;
-    public ProfessionalController(DBContextInMemory db)
+    private ILogger<ServiceController> logger;
+    public ProfessionalController(DBContextInMemory db, ILogger<ServiceController> iLogger)
     {
         professionalComponent = new ProfessionalComponent(db);
+        logger = iLogger;
     }
 
     // Buscar todos os profissionais
@@ -21,7 +23,7 @@ public class ProfessionalController : ControllerBase
         return professionalComponent.GetAll();
     }
 
-    // Buscar todos os profissionais
+    // Buscar todos os profissionais disponíveis
     [HttpGet("avaible")]
     public List<Professional> GetAvaibleProfessionals()
     {
@@ -39,13 +41,18 @@ public class ProfessionalController : ControllerBase
     [HttpPost]
     public IActionResult InsertProfessionals([FromBody] ProfessionalDTO dto)
     {
+        logger.LogInformation("Post Profissional");
         try
         {
             professionalComponent.Insert(dto);
-            return Ok("Cliente cadastrado com sucesso!");
+
+            logger.LogInformation("Profissional cadastrado com sucesso.");
+
+            return Ok("Profissional cadastrado com sucesso!");
         }
         catch (Exception ex)
         {
+            logger.LogInformation("Profissional não cadastrado. Motivo: " + ex.Message);
             return BadRequest(ex.Message);
         }
     }
@@ -54,13 +61,18 @@ public class ProfessionalController : ControllerBase
     [HttpPut("{id}")]
     public IActionResult UpdateProfessionals(int id, [FromBody] ProfessionalDTO dto)
     {
+        logger.LogInformation("Put Profissional");
         try
         {
             professionalComponent.Update(id, dto);
-            return Ok("Cliente atualizado com sucesso!");
+
+            logger.LogInformation("Profissional atualizado com sucesso.");
+
+            return Ok("Profissional atualizado com sucesso!");
         }
         catch (Exception ex)
         {
+            logger.LogInformation("Profissional não atualizado. Motivo: " + ex.Message);
             return BadRequest(ex.Message);
         }
     }
@@ -69,13 +81,18 @@ public class ProfessionalController : ControllerBase
     [HttpDelete("{id}")]
     public IActionResult DeleteProfessionals(int id)
     {
+        logger.LogInformation("Profissional Service");
         try
         {
             professionalComponent.Delete(id);
-            return Ok("Cliente excluído com sucesso!");
+
+            logger.LogInformation("Profissional excluído com sucesso.");
+
+            return Ok("Profissional excluído com sucesso!");
         }
         catch (Exception ex)
         {
+            logger.LogInformation("Profissional não excluido. Motivo: " + ex.Message);
             return BadRequest(ex.Message);
         }
     }
